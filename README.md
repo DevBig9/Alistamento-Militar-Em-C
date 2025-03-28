@@ -20,15 +20,15 @@ Este projeto é um **simulador de alistamento militar** desenvolvido em **lingua
 
 1️⃣ Clone o repositório:  
 ```bash
-git clone https://github.com/seu-usuario/alistamento-militar-c.git
+git clone https://github.com/DevBig9/Alistamento-Militar-Em-C.git
 ```
 2️⃣ Compile o código com GCC:  
 ```bash
-gcc alistamento.c -o alistamento
+gcc -o Alistamento-Militar Alistamento-Militar.c
 ```
 3️⃣ Execute o programa:  
 ```bash
-./alistamento
+./Alistamento-Militar
 ```
 
 ## 📜 Licença  
