@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <stdlib.h>
 
 int main(void) {
     char name[50];
     int idade;
     float altura;
     int opcao1, opcao2;
+    int data_nascimento;
+    int idade_atual;
 
     printf("+-----------------------+\n");
     printf("   ALISTAMENTO MILITAR   \n");
@@ -15,6 +17,20 @@ int main(void) {
     printf("Ola, seja bem-vindo!!!\n");
     printf("Esse e o sistema de Alistamento Militar do Exercito Brasileiro.\n");
     printf("Responda as perguntas abaixo!\n");
+
+    printf("Digite seu ano de nascimento (AAAA): ");
+    scanf("%d", &data_nascimento);
+    
+    idade_atual = 2025 - data_nascimento;
+
+    if (idade_atual >= 18) {
+        printf("Voce ja pode se alistar!\n");
+    } else {
+        printf("Voce e menor de 18 anos e ainda nao pode se alistar\n");
+        exit(0);
+    }
+        
+        printf("Continue com o alistamento abaixo! \n");
 
     while (1) {
         printf("Voce deseja servir?\n");
